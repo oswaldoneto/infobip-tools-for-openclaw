@@ -10,11 +10,17 @@
     "@sinclair/typebox": "^0.34.0"
   },
   "devDependencies": {
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.2",
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
     "openclaw": "*"
   },
   "keywords": ["openclaw", "infobip", "whatsapp"],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test --import tsx --import dotenv/config",
+    "test:integration": "node --test --import tsx --import dotenv/config test/integration.infobip.test.ts"
+  }
 }
