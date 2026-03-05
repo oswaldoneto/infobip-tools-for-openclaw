@@ -1,0 +1,37 @@
+{
+  "id": "infobip",
+  "name": "Infobip WhatsApp",
+  "description": "Send WhatsApp messages via Infobip API",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["baseUrl", "apiKey"],
+    "properties": {
+      "baseUrl": {
+        "type": "string",
+        "description": "Infobip base URL (e.g. https://xxxxx.api.infobip.com)"
+      },
+      "apiKey": {
+        "type": "string"
+      },
+      "defaultSender": {
+        "type": "string",
+        "description": "Default WhatsApp sender number/identifier (optional)"
+      }
+    }
+  },
+  "uiHints": {
+    "baseUrl": {
+      "label": "Base URL",
+      "placeholder": "https://xxxxx.api.infobip.com"
+    },
+    "apiKey": {
+      "label": "API Key",
+      "sensitive": true
+    },
+    "defaultSender": {
+      "label": "Default Sender"
+    }
+  }
+}

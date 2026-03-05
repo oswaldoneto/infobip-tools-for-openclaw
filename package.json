@@ -1,0 +1,20 @@
+{
+  "name": "openclaw-infobip",
+  "version": "1.0.0",
+  "description": "OpenClaw plugin for sending WhatsApp messages via Infobip",
+  "type": "module",
+  "openclaw": {
+    "extensions": ["./index.ts"]
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "openclaw": "*"
+  },
+  "keywords": ["openclaw", "infobip", "whatsapp"],
+  "license": "MIT"
+}
