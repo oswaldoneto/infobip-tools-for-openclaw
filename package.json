@@ -1,5 +1,5 @@
 {
-  "name": "openclaw-infobip",
+  "name": "infobip",
   "version": "1.0.0",
   "description": "OpenClaw plugin for sending WhatsApp messages via Infobip",
   "type": "module",

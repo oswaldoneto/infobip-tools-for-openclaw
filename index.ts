@@ -38,8 +38,6 @@ async function infobipPost(
 }
 
 export default function register(api: any) {
-  const cfg = (api.pluginConfig ?? {}) as PluginConfig;
-
   api.registerTool({
     name: "send_whatsapp_text",
     description:
@@ -65,6 +63,7 @@ export default function register(api: any) {
       ),
     }),
     async execute(_id: string, params: any) {
+      const cfg = (api.pluginConfig ?? {}) as PluginConfig;
       const sender = params.sender ?? cfg.defaultSender;
       if (!sender) {
         throw new Error(
@@ -121,6 +120,7 @@ export default function register(api: any) {
       ),
     }),
     async execute(_id: string, params: any) {
+      const cfg = (api.pluginConfig ?? {}) as PluginConfig;
       const sender = params.sender ?? cfg.defaultSender;
       if (!sender) {
         throw new Error(
